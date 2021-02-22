@@ -1,11 +1,17 @@
 <template>
   <div class="login">
     <!-- Form 组件 -->
-    <el-form ref="form" :model="form" label-width="80px">
-      <el-form-item label="手机号">
+    <el-form ref="form" :model="form" label-width="80px"
+      label-position='top'
+    >
+      <el-form-item label="手机号"
+        prop='phone'
+      >
         <el-input v-model="form.name"></el-input>
       </el-form-item>
-      <el-form-item label="密码">
+      <el-form-item label="密码"
+        prop='password'
+      >
         <el-input type="password" v-model="form.name"></el-input>
       </el-form-item>
       <el-form-item>
@@ -33,4 +39,22 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+  .login {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .el-form {
+      background-color: white;
+      padding: 20px;
+      width: 300px;
+      border-radius: 10px;
+    }
+
+    .el-button {
+      width: 100%;
+    }
+  }
+</style>

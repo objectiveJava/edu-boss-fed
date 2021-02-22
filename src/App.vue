@@ -10,7 +10,7 @@ import request from '@/utils/request'
 
 request({
   method: 'GET',
-  url: ''
+  url: 'http://edufront.lagou.com/front/ad/getAdList'
 }).then(res => {
   console.log(res)
 })
