@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["course"],{bff8:function(e,t,n){"use strict";n.r(t);var s=function(){var e=this,t=e.$createElement,n=e._self._c||t;return n("div",{staticClass:"advert"},[e._v("课程管理")])},a=[],c={name:"course"},r=c,u=n("2877"),o=Object(u["a"])(r,s,a,!1,null,"091ecaf6",null);t["default"]=o.exports}}]);
+//# sourceMappingURL=course.86116463.js.map

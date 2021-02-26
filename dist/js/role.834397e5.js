@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["role"],{"6c35":function(e,t,n){"use strict";n.r(t);var a=function(){var e=this,t=e.$createElement,n=e._self._c||t;return n("div",{staticClass:"advert"},[e._v("角色列表")])},r=[],s={name:"role"},c=s,l=n("2877"),o=Object(l["a"])(c,a,r,!1,null,"5d974192",null);t["default"]=o.exports}}]);
+//# sourceMappingURL=role.834397e5.js.map

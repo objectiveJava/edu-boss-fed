@@ -1,5 +1,5 @@
 <template>
-  <div class="advert">广告列表</div>
+  <div class="advert">广告列表{{ $store.state.count }}</div>
 </template>
 
 <script>
