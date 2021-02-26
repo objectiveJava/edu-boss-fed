@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["resource"],{2240:function(e,t,n){"use strict";n.r(t);var r=function(){var e=this,t=e.$createElement,n=e._self._c||t;return n("div",{staticClass:"advert"},[e._v("资源列表")])},s=[],a={name:"resource"},c=a,u=n("2877"),o=Object(u["a"])(c,r,s,!1,null,"39239acb",null);t["default"]=o.exports}}]);
+//# sourceMappingURL=resource.6409569f.js.map

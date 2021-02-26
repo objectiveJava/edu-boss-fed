@@ -1,6 +1,8 @@
 // router/index.js
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+// 引入store
+import store from '@/store'
 
 Vue.use(VueRouter)
 
@@ -14,6 +16,7 @@ const routes = [
   {
     path: '/',
     component: () => import(/* webpackChunkName: 'layout' */'@/views/layout/index'),
+    meta: { requiresAuth: true },
     children: [
       {
         path: '',
@@ -66,6 +69,26 @@ const routes = [
 
 const router = new VueRouter({
   routes
+})
+
+router.beforeEach((to, from, next) => {
+  // 验证to路由是否需要
+  if (to.matched.some(record => record.meta.requiresAuth)) {
+    if (!store.state.user) {
+      console.log(111)
+      // 未登录 跳到登录页
+      return next({
+        name: 'login',
+        query: {
+          // 将本次路由的fullPath传递给login页面
+          redirect: to.fullPath
+        }
+      })
+    }
+    next()
+  } else {
+    next() // make sure to always call next()!
+  }
 })
 
 export default router

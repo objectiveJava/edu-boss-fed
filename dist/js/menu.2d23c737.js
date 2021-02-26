@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["menu"],{f833:function(e,n,t){"use strict";t.r(n);var a=function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("div",{staticClass:"advert"},[e._v("菜单列表")])},s=[],c={name:"menu"},u=c,r=t("2877"),i=Object(r["a"])(u,a,s,!1,null,"0993a9c4",null);n["default"]=i.exports}}]);
+//# sourceMappingURL=menu.2d23c737.js.map
