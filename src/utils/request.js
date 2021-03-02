@@ -9,7 +9,7 @@ import router from '@/router'
 import qs from 'qs'
 
 const request = axios.create({
-  timeout: 2000
+  // timeout: 2000
 })
 
 function getBaseURL (url) {

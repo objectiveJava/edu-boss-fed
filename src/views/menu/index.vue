@@ -1,13 +1,22 @@
 <template>
-  <div class="advert">菜单列表</div>
+  <div class="advert">
+    <el-card class="box-card">
+      <div slot="header" class="clearfix">
+        <el-button
+          @click="$router.push({ name: 'menu-create' })"
+        >添加菜单</el-button>
+      </div>
+      <div v-for="o in 4" :key="o" class="text item">
+        {{'列表内容 ' + o }}
+      </div>
+    </el-card>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'menu'
+  name: 'MenuIndex'
 }
 </script>
 
-<style scoped>
-
-</style>
+<style lang="less" scoped></style>
