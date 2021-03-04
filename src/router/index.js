@@ -63,6 +63,12 @@ const routes = [
         path: '/menu/create',
         name: 'menu-create',
         component: () => import(/* webpackChunkName: 'menu-create' */'@/views/menu/create')
+      },
+      // 编辑菜单路由组件
+      {
+        path: '/menu/:id/edit',
+        name: 'menu-edit',
+        component: () => import(/* webpackChunkName: 'menu-edit' */'@/views/menu/edit')
       }
     ]
   },
@@ -77,11 +83,12 @@ const router = new VueRouter({
   routes
 })
 
+// 路由守卫
 router.beforeEach((to, from, next) => {
   // 验证to路由是否需要
   if (to.matched.some(record => record.meta.requiresAuth)) {
     if (!store.state.user) {
-      console.log(111)
+      console.log('未登录 跳到登录页')
       // 未登录 跳到登录页
       return next({
         name: 'login',

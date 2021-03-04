@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["advert"],{"46ad":function(e,t,a){"use strict";a.r(t);var n=function(){var e=this,t=e.$createElement,a=e._self._c||t;return a("div",{staticClass:"advert"},[e._v("广告列表")])},r=[],s={name:"advert"},c=s,d=a("2877"),i=Object(d["a"])(c,n,r,!1,null,"92db5668",null);t["default"]=i.exports}}]);
-//# sourceMappingURL=advert.17b74501.js.map

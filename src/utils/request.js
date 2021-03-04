@@ -14,7 +14,7 @@ const request = axios.create({
 
 function getBaseURL (url) {
   if (url.startsWith('/boss')) {
-    return 'http://eduboss/lagou.com'
+    return 'http://eduboss.lagou.com'
   } else {
     return 'http://edufront.lagou.com'
   }
@@ -51,7 +51,7 @@ let requests = []
 // 响应拦截器
 request.interceptors.response.use(function (response) {
   // 状态码
-  console.log('响应成功:', response)
+  // console.log('响应成功:', response)
   return response
 }, function (error) {
   if (error.response) {

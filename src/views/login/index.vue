@@ -69,9 +69,9 @@ export default {
         this.isLoginLoading = false
         // 3.响应处理
         if (data.state === 1) {
-          this.$router.push({
-            name: 'home'
-          })
+          // this.$router.push({
+          //   name: 'home'
+          // })
           this.$message.success('登陆成功')
           // 将用户信息存储到 Vuex 中
           this.$store.commit('setUser', data.content)
