@@ -1,5 +1,5 @@
 <template>
-  <div class="advert">
+  <div class="menu">
     <el-card class="box-card">
       <div slot="header" class="clearfix">
         <el-button

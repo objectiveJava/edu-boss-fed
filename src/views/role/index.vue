@@ -1,13 +1,19 @@
 <template>
-  <div class="advert">角色列表</div>
+  <div class="role">
+    <role-list></role-list>
+  </div>
 </template>
 
 <script>
+import RoleList from './components/list'
 export default {
-  name: 'role'
+  name: 'LoginIndex',
+  components: {
+    RoleList
+  }
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>
