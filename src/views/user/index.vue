@@ -1,13 +1,19 @@
 <template>
-  <div class="advert">用户管理</div>
+  <div class="user">
+    <user-list></user-list>
+  </div>
 </template>
 
 <script>
+import UserList from './components/List'
 export default {
-  name: 'user'
+  name: 'user',
+  components: {
+    UserList
+  }
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>
