@@ -76,6 +76,26 @@ const routes = [
         name: 'alloc-menu',
         component: () => import(/* webpackChunkName: 'alloc-menu' */'@/views/role/alloc-menu'),
         props: true
+      },
+      // 添加课程组件
+      {
+        path: '/course/create',
+        name: 'course-create',
+        component: () => import(/* webpackChunkName: 'course-create' */'@/views/course/create')
+      },
+      // 编辑课程组件
+      {
+        path: '/course/:courseId/edit',
+        name: 'course-edit',
+        component: () => import(/* webpackChunkName: 'course-edit' */'@/views/course/edit'),
+        props: true
+      },
+      // 课程内容组件
+      {
+        path: '/course/:courseId/content',
+        name: 'course-content',
+        component: () => import(/* webpackChunkName: 'course-content' */'@/views/course/content'),
+        props: true
       }
     ]
   },

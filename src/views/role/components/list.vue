@@ -4,7 +4,7 @@
       <div slot="header" class="clearfix">
         <el-form ref="form" :model="form">
           <el-form-item label="角色名称">
-            <el-input v-model="form.name"></el-input>
+            <el-input v-model="form.name" width="40%"></el-input>
           </el-form-item>
           <el-form-item>
             <el-button

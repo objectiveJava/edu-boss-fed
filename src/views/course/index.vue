@@ -1,10 +1,16 @@
 <template>
-  <div class="advert">课程管理</div>
+  <div class="course">
+    <course-list></course-list>
+  </div>
 </template>
 
 <script>
+import CourseList from './components/List'
 export default {
-  name: 'course'
+  name: 'CourseIndex',
+  components: {
+    CourseList
+  }
 }
 </script>
 
