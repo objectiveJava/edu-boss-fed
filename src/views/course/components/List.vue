@@ -197,5 +197,7 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-
+.el-card {
+  margin-bottom: 20px;
+}
 </style>
